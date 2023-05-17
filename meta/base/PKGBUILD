@@ -1,0 +1,86 @@
+# Maintainer: Arnold Sommerfeld <arch@strisemarx.com>
+pkgname=strisemarx-base
+pkgver=27
+pkgrel=1
+pkgdesc="strisemarx's base metapackage"
+arch=('any')
+url="https://strisemarx.com"
+license=('GPL3')
+depends=(
+  'acpid'
+  'aic94xx-firmware'
+  'base'
+  'base-devel'
+  'bash-completion'
+  'bat'
+  'bind'
+  'btop'
+  'cpupower'
+  'dashbinsh'
+  'dog'
+  'dosfstools'
+  'duf'
+  'e2fsprogs'
+  'fd'
+  'fzf'
+  'gdu'
+  'git'
+  'gnu-netcat'
+  'gping'
+  'htop'
+  'ipcalc'
+  'irqbalance'
+  'iwd'
+  'jq'
+  'lf'
+  'libusb-compat'
+  'linux-firmware'
+  'lsd'
+  'lshw'
+  'man-db'
+  'man-pages'
+  'neofetch'
+  'neovim'
+  'nfs-utils'
+  'nmap'
+  'ocl-icd'
+  'openssh'
+  'overdue'
+  'pacman-cleanup-hook'
+  'pacman-contrib'
+  'paru'
+  'pass'
+  'pbzip2'
+  'pigz'
+  'pkgstats'
+  'procs'
+  'qrencode'
+  'ripgrep'
+  'rsync'
+  'sd'
+  'sshfs'
+  'stow'
+  'systemd-resolvconf'
+  'tcpdump'
+  'tldr'
+  'tmux'
+  'unzip'
+  'wd719x-firmware'
+  'wget'
+  'wireguard-tools'
+  'wireshark-cli'
+  'whois'
+  'zsh'
+  'zsh-autosuggestions'
+  'zsh-completions'
+  'zsh-history-substring-search'
+  'zsh-syntax-highlighting'
+)
+
+optdepends=(
+  'reflector'
+  'thermald'
+)
+
+
+# vim: ts=2 sw=2 et:

@@ -1,0 +1,25 @@
+# Maintainer: Arnold Sommerfeld <arch@strisemarx.com>
+pkgname=strisemarx-pi
+pkgver=11
+pkgrel=1
+pkgdesc="strisemarx's pi metapackage"
+arch=('any')
+url="https://strisemarx.com"
+license=('GPL3')
+depends=(
+  'crda'
+  'firmware-raspberrypi'
+  'haveged'
+  'libva-mesa-driver'
+  'libva-vdpau-driver'
+  'libvdpau-va-gl'
+  'mesa-vdpau'
+  'raspberrypi-bootloader'
+  'raspberrypi-firmware'
+  'rpi-eeprom'
+  'uboot-tools'
+  'wd719x-firmware'
+  'xf86-video-fbdev'
+)
+
+# vim: ts=2 sw=2 et:

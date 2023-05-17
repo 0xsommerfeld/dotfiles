@@ -1,0 +1,20 @@
+# Maintainer: Arnold Sommerfeld <arch@strisemarx.com>
+pkgname=strisemarx-extra
+pkgver=13
+pkgrel=1
+pkgdesc="strisemarx's extra metapackage"
+arch=('any')
+url="https://strisemarx.com"
+license=('GPL3')
+depends=(
+  'dmidecode'
+  'gpg-tui'
+  'newsboat'
+  'pam-gnupg-git'
+  'pandoc-bin'
+  'syncthing'
+  'udisks2'
+  'v4l2loopback-dkms'
+)
+
+# vim: ts=2 sw=2 et:

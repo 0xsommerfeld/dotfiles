@@ -1,0 +1,16 @@
+#!/usr/bin/env sh
+
+if [ -z "$1" ]; then
+    text=$(xclip -o -selection clipboard)
+elif [ "$1" = "-" ]; then
+    read -r text
+else
+    text="$1"
+fi
+
+printf '%s' "$text" > /mnt/streams/cast.strm
+sync
+
+if [ -z "$1" ]; then
+    curl -u kodi:kodi 'http://xbox.hodor:8080/jsonrpc' -X POST --data-raw '{"jsonrpc":"2.0", "id": 1, "method":"Player.Open","params": {"item": {"file":"nfs://192.168.1.3/srv/nfs/streams/cast.strm"}}}' -H 'Content-Type: application/json'
+fi

@@ -1,0 +1,15 @@
+# Maintainer: Arnold Sommerfeld <arch@strisemarx.com>
+pkgname=strisemarx-webserver
+pkgver=4
+pkgrel=1
+pkgdesc="strisemarx's webserver metapackage"
+arch=('any')
+url="https://strisemarx.com"
+license=('GPL3')
+depends=(
+  'certbot-nginx'
+  'goaccess'
+  'nginx-mainline'
+)
+
+# vim: ts=2 sw=2 et:

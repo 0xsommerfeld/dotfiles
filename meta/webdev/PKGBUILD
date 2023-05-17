@@ -1,0 +1,17 @@
+# Maintainer: Arnold Sommerfeld <arch@strisemarx.com>
+pkgname=strisemarx-webdev
+pkgver=5
+pkgrel=1
+pkgdesc="strisemarx's webdev metapackage"
+arch=('any')
+url="https://strisemarx.com"
+license=('GPL3')
+depends=(
+  'nginxbeautifier'
+  'prettier'
+  'typescript'
+  'vscode-css-languageserver'
+  'vscode-html-languageserver'
+)
+
+# vim: ts=2 sw=2 et:

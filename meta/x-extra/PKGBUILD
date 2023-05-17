@@ -1,0 +1,24 @@
+# Maintainer: Arnold Sommerfeld <arch@strisemarx.com>
+pkgname=strisemarx-x-extra
+pkgver=20
+pkgrel=1
+pkgdesc="strisemarx's Xorg apps metapackage"
+arch=('any')
+url="https://strisemarx.com"
+license=('GPL3')
+depends=(
+  'arkenfox-user.js'
+  'chromium'
+  'firefox'
+  'gossip'
+  'libfido2'
+  'libreoffice-still'
+  'obs-studio'
+  'okular'
+  'torbrowser-launcher'
+  'zathura'
+  'zathura-pdf-mupdf'
+  'zoom'
+)
+
+# vim: ts=2 sw=2 et:
